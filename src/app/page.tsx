@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import SignIn from "./components/signin";
 
 export default function Home() {
   return (
@@ -20,12 +23,7 @@ export default function Home() {
           Área do Barbeiro
         </Link>
 
-        <Link
-          href="/book"
-          className="px-6 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition"
-        >
-          Agendar Agora
-        </Link>
+        <SignIn />
       </div>
     </main>
   );
