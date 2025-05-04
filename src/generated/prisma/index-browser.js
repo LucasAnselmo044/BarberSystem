@@ -131,6 +131,26 @@ exports.Prisma.UserScalarFieldEnum = {
   updatedAt: 'updatedAt'
 };
 
+exports.Prisma.ServiceScalarFieldEnum = {
+  id: 'id',
+  name: 'name',
+  price: 'price',
+  duration: 'duration',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt',
+  barberId: 'barberId'
+};
+
+exports.Prisma.AppointmentScalarFieldEnum = {
+  id: 'id',
+  date: 'date',
+  status: 'status',
+  userId: 'userId',
+  barberId: 'barberId',
+  serviceId: 'serviceId',
+  createdAt: 'createdAt'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -147,11 +167,21 @@ exports.Prisma.NullsOrder = {
 };
 exports.Role = exports.$Enums.Role = {
   USER: 'USER',
-  BARBER: 'BARBER'
+  BARBER: 'BARBER',
+  ADMIN: 'ADMIN'
+};
+
+exports.AppointmentStatus = exports.$Enums.AppointmentStatus = {
+  PENDING: 'PENDING',
+  CONFIRMED: 'CONFIRMED',
+  CANCELLED: 'CANCELLED',
+  COMPLETED: 'COMPLETED'
 };
 
 exports.Prisma.ModelName = {
-  User: 'User'
+  User: 'User',
+  Service: 'Service',
+  Appointment: 'Appointment'
 };
 
 /**
